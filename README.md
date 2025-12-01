@@ -1,4 +1,4 @@
-# 💍 The Marriage Council AI (Multi-Agent System) (https://marriage-council-agent-265055087845.us-central1.run.app/)
+# 💍 The Marriage Council AI (Multi-Agent System)
 
 This project implements a production-ready **Multi-Agent System** using the **Google Agent Development Kit (ADK)** to automate the complex, multi-stage process of arranged matrimonial negotiation and verification.
 
@@ -74,8 +74,10 @@ The system relies on custom Python `FunctionTool`s for deterministic logic:
 
 -----
 3. **Deployment(cloud):**
-   Interacting with cloud web app deployed in Google cloud.
-   ![Marriage-council-AI(Multi-agent-system](https://marriage-council-agent-265055087845.us-central1.run.app/)
+   you can Interacting with cloud web app deployed in Google cloud.
+
+   (https://marriage-council-agent-265055087845.us-central1.run.app/)
+
 ## 3\. Project Structure
 
 ```
