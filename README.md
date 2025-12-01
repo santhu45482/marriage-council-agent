@@ -52,7 +52,6 @@ The system relies on custom Python `FunctionTool`s for deterministic logic:
     pip install -r requirements.txt
     ```
 
-    *(The included dependencies also cover `pytest` for running tests.)*
 
 ### Execution
 
@@ -95,11 +94,13 @@ The system relies on custom Python `FunctionTool`s for deterministic logic:
 ```
 ## 4\. Cite US
    To cite this project.
+   '''
    {
    author = {Santhosha S R},
-   journal = {https://github.com/santhu45482/marriage-council-agent/tree/main},
+   journal = {https://github.com/santhu45482/marriage-council-agent/},
    month = {12},
    title = {{The Marriage Council AI (Multi-Agent System)
  }},
    year = {2025}
    }
+   '''
