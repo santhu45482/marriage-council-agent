@@ -94,13 +94,13 @@ The system relies on custom Python `FunctionTool`s for deterministic logic:
 ```
 ## 4\. Cite US
    To cite this project.
-   '''
+   ```
    {
-   author = {Santhosha S R},
+   author = {santhosha S R},
    journal = {https://github.com/santhu45482/marriage-council-agent/},
    month = {12},
-   title = {{The Marriage Council AI (Multi-Agent System)
- }},
+   title = {The Marriage Council AI (Multi-Agent System)
+ },
    year = {2025}
    }
-   '''
+   ```
