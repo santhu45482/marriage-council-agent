@@ -19,7 +19,6 @@ The core architecture is built around a centralized **Broker Agent** that orches
 | **`detective_agent`** | LlmAgent | Executes the **`perform_background_check`** tool against the database. |
 | **`groom_rep` / `bride_rep`** | LlmAgents | Persona-based negotiators focused on specific demands (Location preference, Career negotiation). |
 
-![System Architecture Diagram](assets/architecture-diagram.png)
 
 ### Key Tools
 
