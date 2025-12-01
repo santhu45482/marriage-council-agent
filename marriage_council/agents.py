@@ -28,7 +28,10 @@ def get_vetting_council():
         name="detective_agent",
         model=Gemini(model=conf.model_fast),
         tools=[FunctionTool(perform_background_check)],
-        instruction="Receive IDs. Check background using tool `perform_background_check`. If 'High Debt' or 'Fake Job', report CRITICAL FAIL."
+        # MODIFIED INSTRUCTION BELOW:
+        instruction="""Receive IDs. Check background using tool `perform_background_check`. 
+        If 'High Debt' or 'Fake Job' risk is found, respond ONLY with the exact, unique phrase: **DETECTIVE_CRITICAL_FAILURE**. 
+        If clean, respond ONLY with: **DETECTIVE_CLEAN_PASS**."""
     )
     astrologer = LlmAgent(
         name="astrologer_agent",
@@ -42,20 +45,24 @@ def get_vetting_council():
         description="Runs background and astrology checks simultaneously."
     )
 
+# marriage_council/agents.py (MODIFIED)
+
+# marriage_council/agents.py (inside get_synthesizer_agent)
+
 def get_synthesizer_agent():
     return LlmAgent(
         name="synthesizer_agent",
         model=Gemini(model=conf.model_smart),
-        instruction="""You are the Synthesis Agent. You receive outputs from the Detective and Astrologer. 
-        Your task is to provide a single, clean JSON verdict.
-        1. If the Detective reports 'CRITICAL FAIL' OR Astrologer reports 'WARNING' (score < 18): set status to 'FAIL'.
-        2. Otherwise, set status to 'PASS'.
-        3. STRICTLY output JSON matching the VettingVerdict schema.
-        """,
+        instruction="""You are the Synthesis Agent. Analyze the output from the Detective and Astrologer. 
+        Your task is to provide a single, clean JSON verdict strictly matching the VettingVerdict schema.
+        
+        **CRITICAL RULE:**
+        1. **IF the input contains 'DETECTIVE_CRITICAL_FAILURE' OR 'BAD_MATCH'**: set the 'status' field to **'FAIL'** in the JSON.
+        2. OTHERWISE: set the 'status' field to **'PASS'**.
+        3. Output ONLY the JSON object and no other text.""",
         output_schema=VettingVerdict,
         output_key="verdict"
     )
-
 def get_groom_rep():
     return LlmAgent(
         name="groom_rep",

@@ -3,3 +3,5 @@ google-auth
 pandas
 streamlit
 tabulate
+pytest
+pytest-asyncio

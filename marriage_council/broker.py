@@ -12,13 +12,13 @@ def get_broker_agent():
     parser_agent = get_parser_agent()
     groom_rep = get_groom_rep()
     bride_rep = get_bride_rep()
-    vetting_workflow = get_vetting_workflow() # Create a fresh instance
+    vetting_workflow = get_vetting_workflow() 
 
     vetting_pipeline = SequentialAgent(
         name="VettingPipeline",
         sub_agents=[
             parser_agent,         # Step 1: Extract IDs
-            vetting_workflow,      # Step 2: Parallel Checks
+            vetting_workflow,     # Step 2: Parallel Checks
             synthesizer_agent     # Step 3: Final Verdict (JSON)
         ]
     )
@@ -39,13 +39,15 @@ def get_broker_agent():
         **PHASE 1: VETTING**
         1. Call `VettingPipeline`.
         2. **CRITICAL STEP:** Analyze the final JSON verdict from the pipeline.
-           - If the verdict contains the word 'FAIL', respond with the exact text: "VERDICT: MATCH REJECTED. Vetting failed due to critical risk." and STOP.
+           - If the verdict contains the word 'FAIL' in the "status" field, respond with the exact text: "VERDICT: MATCH REJECTED. Vetting failed due to critical risk." and STOP.
            - If the verdict contains the word 'PASS', respond with the exact text: "VERDICT: VETTING PASSED. PROCEEDING TO NEGOTIATION."
 
         **PHASE 2: NEGOTIATION**
         1. Consult Reps (use AgentTools).
         2. Propose compromise.
         3. Verify with `calculate_utility_score`.
-        4. If Score > 60, declare MATCH SUCCESSFUL.
+        4. **FINAL DECISION RULE:** - IF the score is > 60: Output exactly "**MATCH SUCCESSFUL**".
+           - IF the score is <= 60: Output exactly "**NEGOTIATION FAILED**".
+           - Do not add any other explanation in the final line.
         """
     )

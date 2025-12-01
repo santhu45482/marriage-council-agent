@@ -1,0 +1,13 @@
+# Python Cache
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual Environment
+venv/
+.venv/
+
+# Generated Files
+matrimony_council.sqlite
+test_db_*.sqlite
