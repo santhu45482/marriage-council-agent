@@ -1,0 +1,42 @@
+[
+  {
+    "description": "Scenario A: Golden Path (Clean Couple)",
+    "eval_id": "vetting_success_g1",
+    "turns": [
+      {
+        "user_prompt": "Identify Groom G-1 and Bride B-1. Run full vetting pipeline.",
+        "expected_agent_response": "VERDICT: VETTING PASSED. PROCEEDING TO NEGOTIATION."
+      }
+    ]
+  },
+  {
+    "description": "Scenario B: Security Guard (Fake Job Risk)",
+    "eval_id": "vetting_fail_g8",
+    "turns": [
+      {
+        "user_prompt": "Identify Groom G-8 and Bride B-1. Run full vetting pipeline.",
+        "expected_agent_response": "VERDICT: MATCH REJECTED. Vetting failed due to critical risk."
+      }
+    ]
+  },
+  {
+    "description": "Scenario C: Deal Maker (High Utility Score)",
+    "eval_id": "negotiation_success",
+    "turns": [
+      {
+        "user_prompt": "Phase 1 passed. Couple details: Groom (Location: Delhi, Job: Banker), Bride (Location: Bangalore, Career: Doctor). Propose the optimal compromise: Live in Delhi, Bride keeps her Doctor career. Verify the final utility score to finalize the deal.",
+        "expected_agent_response": "MATCH SUCCESSFUL"
+      }
+    ]
+  },
+  {
+    "description": "Scenario D: Deal Breaker (Low Utility Score)",
+    "eval_id": "negotiation_failure",
+    "turns": [
+      {
+        "user_prompt": "Phase 1 passed. Couple details: Groom (Location: Delhi, Job: Banker), Bride (Location: Bangalore, Career: Doctor). Propose the optimal compromise: Live in Mumbai, Bride quits her Doctor career. Verify the final utility score to finalize the deal.",
+        "expected_agent_response": "NEGOTIATION FAILED"
+      }
+    ]
+  }
+]

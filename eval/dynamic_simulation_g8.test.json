@@ -1,0 +1,305 @@
+{
+  "id": "7a0a9d63-83b3-4eee-b531-2c7b72cba324",
+  "appName": "marriage_council",
+  "userId": "user",
+  "state": {},
+  "events": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Identify Groom G-8 and Bride B-1. Run vetting."
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-69637736-258a-4282-aa89-ee2696561bca",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "ec118d9d-c48e-4bfe-ab38-ecb133bf9cb6",
+      "timestamp": 1764683989.200873
+    },
+    {
+      "modelVersion": "gemini-2.5-pro",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-755b04b2-8169-4f82-95d9-8cdc69884cc8",
+              "args": {
+                "profile_id": "G-8"
+              },
+              "name": "get_profile_details"
+            },
+            "thoughtSignature": "Cv0PAePx_17mjyl7HRQqRMDRTD5FdCPRT5vh9e7v_a5JtoFmfK4mJpd0ZA57FqWj0ad5p6L74k-yJ7YtFhlonaRRPU5XrwpI6AF1iYfU4xJXsmROHZwVJ53jaR7mayWoIO7HbwcdcSauah06XyPshSs8Fv-rEPzFGcKfPbRVMza7NYIlyl3NN4kHU8E0SKRd7IVnpHIjPs9rhB7ESmGzZArNmsV52brJubq6M7iFTH8AkiGHzc94ZL8Pbxe4m7bJoTz9Nq8RmJhuzWtOxawcyq7DC4sZyd6eOILFvEVDOSRqbVN9Nuvc8yZo4o49Qpe9dQW20CMyjp1YEBTZ-XHRpTf_HIVV0Hqraz0tSwZkSHHVBRwYOvaLVn2u7-kiqPiG4gr0ggHBGxo-vf-ea0c3vPBuarMsaZLCa5X78tSUcIxWEXEzwrCsAZe8rZAzve6KEUNYRzNUgvOAZC1KC1kWK4yc5SoDIQTFH5IkmEEf7AZ2gRc9w0uD32194LJg2SKmXb3JhkTWuS-I-QN-Mq_tODyTY2Lc7Ltme03feEWrjD1cjso_iRxd7uE4gDqIVyCQ0-jU6-ZzqnTHxFexv4n5OUPhCC-QW9X0anw_JJtrdOe03sKCuZw4XQz1E0gNPFzBsNx1qAYzyhs12xSlR_7_tqzSByKLgkhD4YDpZIClKPwOJT914nAspOrsjJutOH1wDJES99OLhLVAkYdWq1AlZshXusOufUv0NFTVNxb6yHGIT-bLixTFh_ZZnUIR-4NvMSnL7wS4Tp-48bTBjxfpHus_v-7v6Cog1KNXIdllx4acQJBgVnlqe4c11Ijo8UtjwQwC1em17pw7dmQzZ_BcAQpyJwllIv9kBficwETgdBbpqscOK1MedFjf_twMU8ZjsolETL80LIWyp-Okmf6pvhHwbAfLhox3DHPwN7j-lhCGSp20WZfmp8bvS3oQeLoW-7A7bVkIf9fYOtHi1Kv1p7Tjmn6jKf8Q3PrHjB32CBVCcURZeRQpx-ZYS8rYK9V2_kMym3kkL_9UDEgcxTXA6JpPoNI1YtGvOza9t1gjZjo1PA8TlNPINE8MqcAYNzqO0Hgwt-D85cetH5d1-FMlURdeNuX17TKxGLGIciOoftPhn232mm4d735OBhQLsjvPCd-j43ARtsv7vz77wT3XG2IcSLZfzAOUM7F25PH-1Cj7rltYk8adcuL6g5WjvRgYsmW8KzgqX_HkCg_RsgWcziLe9xjhIAkdNUqEN8TZmJWGTejET3S53RPTbzrbgm3twCa30VR1BC-gNyYPxNx5BIIqVVS_uHH4EQWp8Y9Sa7_DdSdDnnOBcEynzBvRfBmWPZJfO0OmfeFY25sp0noKwAuNgLK0vivtjiQrj1-9PenlUUv8ooTD4Dtk1SJLaHtPmhz7H6byV2hwqsaMF3ttxovWsdBGl_Wcaxxltl-pc_XdJpzuAPA7pjAUSBQHwyKAskwHxdTDq7EHyZ3PS32i2Y6F8Ui1FQ1Dbxz8w4k9FpEluFp915VpgnFDzFdorfijVWskZ-g-uLmjKbsdIobs_0COQC3EN0lsW_EpXT9Rqiul-UcHbkWSrXNH3A6nR-k2-Xi0cssoBtAgCwwNbgcMXT1xTlSknkdK3zlxblEsFWcZdU8NEhB1jA6W6OTaJV9fA4WstlKc3KQJsOgc3WHUvhs6Ge0-7jTZa2GjQbgIv-_3VkA5CiiyU3S0DM2sB2IG9jlsYxhs3WDRkumeDD3oJI9I7fn_LzCWu-41Dlv5z_tTxKmCcGO0rS5rJjAWsoaPe-TXiZsVDVlsanWmjppHNXPUVJ5dg7rDC6yAQojr7bA5t25813ovvdzRExRTJZt4oYPl0Q1XAqdKAxjPfgpR3xksMQSa39PYIBQBroRp-sTq74p0ANVpV4jDf9GAx7nur0rfnC1aUmnNT20CLnc2jd06h2v1qp3aq9mgpc-93_jAeO2wDs-xipqiyCVNByOvV5U17greIl2C-jGdtsctay70RcNngBtsAgCMqJmOmmOsx3RRnhlcL9MOXeMrZfSsRs4Mg5Y-Gb8gyzZ8zwjaLvnCYZWhOJ1dMhYDurHFuPbnkgEn8w9zGTOQZig_xeEndaoBw-E6rQLIh8B4sY-uvaMKzrgB1NQiPl9X0WI_UbqP2zEXqnVbHi3AElNTlXwnuDX8-hezXYqXQzFWcrFePIvrWjIXmxUte9z0T2JvbBJ2F_FCxK4_7e2OtugAfl_Nda0kzbqETOtlCjcphgtcMY6iAiy-KhWlW4it_6xs2PnWN4_kY8xUFF4M-T8umOejggHdWy2wNA3FA3g33oV5yDEEHVY2U3Q_-5h38T_q-Mzl_r5SN-q5_idGAMkrEQSKbyx0XaRdXYApPHF1ZMLgR3kJjSMbXw86lGO1TPdLiuuDVtuSMV32sCQxCG9mFpNeapxNEjFjzt9fmhKjO9nAX6ETG4VitUzDGM5B0nr8XSh4KR98NH1qcwXGkBEJaD2aZ8F3nMBJZC27gqmVbL1FIqZXuiKvh_wM1PVzhbIVcdVdPkJXqFO7EOK-0W4W_iGgZw7S7FwTr_hV7kT6zmtRgHhnRdkxTrdZlUffNLkF36igdMP3Ohb-npdhQNFyqg-SKBMMRDk266g5Ko8nNKMHFwSH2VSKv0-5RU7OuptOHWOM0e1-JBXIM0wagEgCUHoSKOhxUZJ8_JcVRgpVw6jFQdkD3ZkDaAJCdjLyl72jwKM="
+          },
+          {
+            "functionCall": {
+              "id": "adk-435a6277-3633-44ef-ae3a-bd506500c41e",
+              "args": {
+                "profile_id": "B-1"
+              },
+              "name": "get_profile_details"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 22,
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 22
+          }
+        ],
+        "promptTokenCount": 236,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 236
+          }
+        ],
+        "thoughtsTokenCount": 566,
+        "totalTokenCount": 824,
+        "trafficType": "ON_DEMAND"
+      },
+      "avgLogprobs": -3.08719184181907,
+      "invocationId": "e-69637736-258a-4282-aa89-ee2696561bca",
+      "author": "marriage_broker_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "a775b510-4054-462c-871d-af06c7bf4f51",
+      "timestamp": 1764683989.210433
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-755b04b2-8169-4f82-95d9-8cdc69884cc8",
+              "name": "get_profile_details",
+              "response": {
+                "result": "{\"id\": \"G-8\", \"name\": \"Groom_8\", \"age\": 29, \"location\": \"Bangalore\", \"job\": \"Banker\", \"horoscope\": \"Virgo\"}"
+              }
+            }
+          },
+          {
+            "functionResponse": {
+              "id": "adk-435a6277-3633-44ef-ae3a-bd506500c41e",
+              "name": "get_profile_details",
+              "response": {
+                "result": "{\"id\": \"B-1\", \"name\": \"Bride_1\", \"age\": 27, \"location\": \"Chennai\", \"job\": \"Banker\", \"horoscope\": \"Taurus\"}"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-69637736-258a-4282-aa89-ee2696561bca",
+      "author": "marriage_broker_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "6f80f900-be29-4e11-8dd2-b1242858fde1",
+      "timestamp": 1764683996.91075
+    },
+    {
+      "modelVersion": "gemini-2.5-pro",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-6d81126f-9efc-4383-8460-4e24d3e0bd9b",
+              "args": {
+                "request": "{\"Groom\": {\"id\": \"G-8\", \"name\": \"Groom_8\", \"age\": 29, \"location\": \"Bangalore\", \"job\": \"Banker\", \"horoscope\": \"Virgo\"}, \"Bride\": {\"id\": \"B-1\", \"name\": \"Bride_1\", \"age\": 27, \"location\": \"Chennai\", \"job\": \"Banker\", \"horoscope\": \"Taurus\"}}"
+              },
+              "name": "vetting_council"
+            },
+            "thoughtSignature": "CoYIAePx_17dgKNX_asP6GEVZToaJfeSz7Z41bIl7xAgp0K28Jsjz-g14aTA2M6KSY-RmUSoERSIGatQrEhNz_Fgl-Dzkqvv5RL_CHPjWyAtYSpaPlX4_lOeJqPIyF3nXSW3niD2Pg20RWL7XL9hPu1SpWXaLeJmoIUl3bzJVrmdmhsT33PbYWYpx_BChLarJHkQ_sdhhcog5yQ13OMvkMK20C0WSgbsXe3z8f6EtKwlzBJg2cq0UxM4Z9tuolXiLBBEFo4WRkQQi04eSxYvB5PWGw1fj6SLOMcdE3061aPtfMdGYXZrQMO24HgEhCx-QJTJ8g1iseBfE5uGd2zF1WCc9FAKdlUyGXfIPaUbDU_6sKjRNxWbayR_UhfpJuWJMSJH-P7eJlniuB75pdRYu5GShwXX2Nfgmc2NOjIg6Hdx0wJjQ7egcR9uuIh8agd7xHw1RMnYlmjXJrt3cqAN1CQhqxabYH0Q9sArmj259iw3ABZsslMrs7NGREc8kOu5Lq8aQuKkOdVZLrmxyVO2iWKkdJq6g-FiKqNDRr0xikLQFeL11j3fXrTudMf0dV42QTtfbZPJEyv7_IfQoTlp-M2jLv7vJZc47MTJT-aFSEcwkvzi-BE45nrhy4aqoYxmyEuDPjqlsJ7LGjosOciBZp9U8JslfSdj1I5vyBkkkzk2FjVAMW1nZrIu60jM280i-8-_rVhl6FrAA3LSP7ToI2z37jL677UA0ljuAY9e49CCWBV6cWe6eZeZE943oEycqPog-HvZpryouOKgxCUHN7HPz1PEzeAaq5kDqui_pEbUBDe12qwLFdxfp-QKUYL95kwMVW0BrCtRGf-rLh0nxtdU_KB-7axaMIK29AAV9hEErA3rqcQjRM0N1b7c3gKnibNBE-uiri3JMYyeYAgopIdzgEHB-2-BRSripDqHBRYwqhHQjFtjQAAzpAg_2wsOf2joF7AliOnjcRZFhEVsJzXx-v6DrU5vEH_hU0nz6_sgTbZ2_ljKYEy2RjiU7xkdRxIisyAT3ZEceF1FAdfcYt6dWjrpo3lS0w0Y6YJ-L5pavC4P0AzvELy7MI5cn_2Yrn3NViQXIbg2lEFZ7J5Vis1CcQVU_0ACNlQqsxAVIW56phzQRe3FFhJ5m0HmJlBTx0YvoZcxPTK-9usvSptuXlSipuRkuyz3CkiWCcd66BK_9sd1inm-W0CiIPsfeFN7vibW2HTIEvFZEvDKkXpooGmpjjkLm3UYbps4px2w1OVwUaOQmSm6zhiMIhJxgAsfLdnFvWFvuYtNu6cVtsk25tVeLeXpvt5qfoynu2aLot8UxSlIV9owQvCVZdWkYnJLz_N6f0YkWpboWsk5O1KeZ-IX8VKxmeMmMg=="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 97,
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 97
+          }
+        ],
+        "promptTokenCount": 356,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 920
+          }
+        ],
+        "thoughtsTokenCount": 349,
+        "totalTokenCount": 802,
+        "trafficType": "ON_DEMAND"
+      },
+      "avgLogprobs": -0.17499422289661526,
+      "invocationId": "e-69637736-258a-4282-aa89-ee2696561bca",
+      "author": "marriage_broker_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "69ea9c94-b61b-41c4-be6d-47157c296d90",
+      "timestamp": 1764683996.913989
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-6d81126f-9efc-4383-8460-4e24d3e0bd9b",
+              "name": "vetting_council",
+              "response": {
+                "result": "Groom (G-8): CLEAN\nBride (B-1): RISK_FOUND"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-69637736-258a-4282-aa89-ee2696561bca",
+      "author": "marriage_broker_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "597cc68f-970b-408f-8dce-5d03af3f8d9e",
+      "timestamp": 1764684007.650463
+    },
+    {
+      "modelVersion": "gemini-2.5-pro",
+      "content": {
+        "parts": [
+          {
+            "text": "VERDICT: MATCH REJECTED",
+            "thoughtSignature": "CooFAePx_15xL37nCTZg09pa3QzM_b3UTrbgmnlRNLz3nVnRRHSzxgMrZgiYTNXjsO6EI1AY4M1LrAlHnmYrfkpk5rM1uLgyt9YWJ2S1ea44b4o0CPeuGEPTtkKTWGH8tTcM2CuSyupx95MzJ0UdgwcT9pLSXLx5x6yLcGhrfM5X7QqVIAdP8MoVY_vi960fDfo4fj87W3LoMprlRmeSDsRNlP5nJJLIXwxGzQ9p-3tyN-KN3oiiOsxTlWHA-KAZgzweRRqLk1IiXVMyOWKA98BERlED7QLjiNHqAfAbiJKuY6lYXvrODREo3Jd08L_cll3Jw-CpxR8EhqT3Xu1eYREkUq5FXOfM-B8u9wR-Gg6k7811qiQ4l9EJbKoYli5tob7NlW8l-dcFo8TcVB--kvctQAZnOSfqYLbpH4DUZU7ixzKtWrC7Sd_B1spoZV-lLntit_AJdJhZlin_GpiHq8mQuj2-G5OlgVb_ydp1ycVUi_TT8x4fF6rAGFCrEdsXU0-acLT0VulOElV_HAkENXZ9DlBuWQff65lsCPTfmtLogOwr0VPKiqj5QIpt5pAB7rAfkJ_qNHNrnDcsbSSgLDs6QBt8Fh3pYeRF7_6Gd5LAUb3EqoX-7bGN9aJsEJ0uYchkN29T1SMjPyO3KqjgY_sJ-3nd5C4Xvn9wZiaQziw3kTk0XCAFK4zfkbvuI1tQ7tJtZDhGk106QW4xjU8mxHU9KQsv1BBlB0UxsZVacxdOMvjtiP38ukIaE4wN-ddFFdveHiaZ8mS0lU1feFmtVz2Py-aNciu1gWkztUa7mlh1D9joBEk93Zb-f-hj2lUy_BwIX4LW_assVW_chYoCoNqe14v8iAgKGzTgX7Q="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 7,
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 7
+          }
+        ],
+        "promptTokenCount": 475,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1386
+          }
+        ],
+        "thoughtsTokenCount": 178,
+        "totalTokenCount": 660,
+        "trafficType": "ON_DEMAND"
+      },
+      "avgLogprobs": -1.2298831939697266,
+      "invocationId": "e-69637736-258a-4282-aa89-ee2696561bca",
+      "author": "marriage_broker_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "2286bbcd-a716-49db-8b83-78013b24da77",
+      "timestamp": 1764684007.653966
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "But he is rich! Can't we overlook the job issue?"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-51576099-d31a-4be0-bc7f-53f190534e72",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "f9443b5a-7bb0-43dd-b41c-210d147b399f",
+      "timestamp": 1764684051.170442
+    },
+    {
+      "modelVersion": "gemini-2.5-pro",
+      "content": {
+        "parts": [
+          {
+            "text": "Vetting council's decision is final. Match rejected.",
+            "thoughtSignature": "CsIKAePx_1789m2YI8w2iRwCaFQqxUMWFQAd8pDzYAM-LbhpDyAVjE7xQFczH6SrKyRqNzdTRr7lfmyhzVXzLW-hf0Buk9aC7KAF7iYyMTdE207MCOajZjWRKON5Gp0OpSBvMn3RuU7I7kOCHn3R8p0VeAHECmk9Dp9D8kmOFQd7fi7DmfSQzMm7ilBCxbYUw2E_DMiA26p0Ws7J4m4JPDIb-hzcF8ulMwf23EwdPfN90l-IBGgZ5b0Leun-BQRN74kywjaRbAGinIQf_g1sbuNJlqsVblHren3ehMOfTR1u22TTmfI00VN2NuPuhdq3JRKXfL2_1DzAGOKyFy7h4KwbetpFadB5KX1STjpiekO6xlxNV4gycIABLmm3Kgcm6CG81LdDwnUoLx3kcd2Olto10LsyGj3PPt28_y9eIYbbDW1DV71d8aCRZz-cyjqXJUnePkGnFNNmcf2cmTaONMbMAMq6bgN8FPhNsSRlXg1mgq8OiGsxYIus4oQYOJbpcpQVe9dvBG074U8yAu6f9dQt249etWfpHrsLPRcstsVdzSODl2WDLDBSXTR7jhSY4peGLfMso-X_bNeC09oX1HwxsQ3i0j1sGnQbuEewqje6kgxEXvgqPSGytT6WDEsHZqcLxHb9csJDtqQ-67ajFHC6uHojYXbuAWc7-0sMLe-ofR_Qne9aqrqdy4YqVdrJ-fIUwtdNuBy8XteuYjIPzKKOcPIDi-RdAow90QZ7OrM_5lAgHTvDGlXlEbWtlAdlqUJhAPt4opYmMym54Q-Qh7J_FhhazPM5I_dB1oH3rvC7TUSd_4fqxKSIuvEgjwxiexhzUhsUcNkMFUVjjMwiYSrt4gEdMHfHZ8J2NzTtrnG2Kke_2iKUsM4UStptP3zKSpWygvAfR0iVkfA6v6yqexVu6k1gA4eAt4gryHDob8d1IvFrkTOzjns0lzNGW83WDIsUkYBlsPrH5aMGEC3u28Zs-da02d6S4by0PXqZuuuTdLrVDQBtSRXtc_HtlcTexFsIFhSlLe3QKGA-TCSpKR0jSY9WlRZNRI4huu0JQaO2rQDNkgrHSjJVde_gC04w36velGMkyhjAR-ITtvq2K8MdQBrGPApbVaEfRp6PnZ6y_xBA4MamsRJiphoQI6fj427PcF2hs6hEFJ9ysFu3qcFy5U1njoH4rruWMtaaV9q0cj2eJJvVXL_K4Yl1NYFjeKeP_GXQq_ZqFIn9hAWaHmjiAfWTKN1HwEq0XCD5TBMvj4vNWLQ8DOhyXmZ1qqpa5uAAdhWuX1H_O_6SJZS8rmzDZmhL6gMaP8vtvSfKrsQSQpyyKfEMbPuAKPHTbBhYS5Nln8BrXbZu1qZ2JvMKxLQitXNLy6nUP9V-1apP5Rp5_F3QmHiGKcPCLzU3ZPGjx0ld67dBIqUnm0v7YD95K21UXFSkX5S-V8WqoLOWym6ktpwyxcnB0h9UohkGn1Y57kdATqiP03Z-8cKD6qkbe9Eue9OnQJpEP4sua55_xdkmXECQyZ0h9hVX45DeZwmUiEu3go_yu4zAGNGt3oAmm3epYIjLpvKeOZH4QZfGme4902oOPuTMy7N1uUQgN6aFL8Qx35LjjmvOdPyCEQl6abSXW86EAILWh0Fhri3Brd5QCVNeKksQunJUynHQmGBT9s-n6zDOQd_c61Ev5nXXUdfL2AaqIVpD71T-eAWXrKvrQUbjFDjkD_s2z9T-O28LY5x1I13hIuMPahuVgizqi3ZF3E7LC93qxbZIkQEsPY9LDtlOTk0sCzsEDK5Q5ICFs5WfGSQ="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 12,
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 12
+          }
+        ],
+        "promptTokenCount": 496,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1583
+          }
+        ],
+        "thoughtsTokenCount": 313,
+        "totalTokenCount": 821,
+        "trafficType": "ON_DEMAND"
+      },
+      "avgLogprobs": -6.3053544362386065,
+      "invocationId": "e-51576099-d31a-4be0-bc7f-53f190534e72",
+      "author": "marriage_broker_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "877d25bc-ae04-4836-8386-64413b8f7caf",
+      "timestamp": 1764684051.174092
+    }
+  ],
+  "lastUpdateTime": 1764684051.174092
+}
